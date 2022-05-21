@@ -57,14 +57,32 @@ html {
     color: white;
     font-size: 3rem;
     text-align: center;
-
+    overflow: hidden; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
 }
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(255, 255, 255); }
+  }
+
 
 /**main**/
 
 .main {
     grid-area: main;
-    background-color: rgb(218, 175, 123);
+    background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -72,7 +90,6 @@ html {
 }
 
 .exhibitions {
-    background-color: rgb(175, 175, 127);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,16 +97,22 @@ html {
 }
 
 .exhibitions img {
-    width: 51%;
-    height: 100%;
-
+    width: 55%;
+    height: 65%;
+    object-fit:contain;
+    transition: height 1s, width 1s;
+}
+.exhibitions img:hover{
+    width:  71%;
+    height: 90%;
+    opacity: 90%;
 }
 
 /**section 2**/
 
 .section__about {
     grid-area: section;
-    background-color: rgb(88, 87, 85);
+    background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -121,6 +144,8 @@ html {
     width: 70%;
     height: 70%;
     object-fit: cover;
+    position: relative;
+    top: 17%;
 }
 
 .mapa {
@@ -128,17 +153,30 @@ html {
     height: 100%;
 }
 
+
 .botonera {
     margin: 50px;
 }
 
 .footer__button {
-    background-color: rgb(255, 125, 65);
-    border: solid rgb(51, 39, 34);
-    width: 30%;
-    height: 30%;
-    margin: 20px;
+ padding: .75rem 1.25rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: .15rem;
+  z-index: 1;
+  text-decoration: none;
+  transition: all 500ms ease;
+ 
 }
+
+
+.footer__button:hover{
+    color: #ff7a59;
+    border: #ff7a59 solid 1px;
+     background:#fff;
+}
+
 
 /** estilos para collection **/
 .title{
@@ -162,6 +200,7 @@ html {
     justify-content: center;
     align-items: center;
 }
+
 
 .img__1{
     width: 50%;
