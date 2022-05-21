@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style_new.css">
+
+</head>
+
+<body>
+    <div class="container_grid">
+        <!-- los hijos del contenedor grid son el header el main la section y el footer -->
+        <header class="header">
+            <!--hijos del header son el nav el h1 y el boton-->
+            <nav class="nav">
+                <!--los hijos del nav son los links-->
+
+                <a class=header__nav__a href="../index.html">Home</a>
+                <a class=header__nav__a href="./about.html">About</a>
+                <a class=header__nav__a href="./exhibitions.html">Exhibitions</a>
+                <a class=header__nav__a href="./collection.html">Collections</a>
+                <a class=header__nav__a href="./contact.html">Contact</a>
+
+            </nav>
+
+            <h1 id="header_text">The National Gallery</h1>
+
+        </header>
+
+    <main>
+        <section class="contact">
+            <form action="">
+                <fieldset>
+                    <legend>Contact Us</legend>
+                    <br>
+                    <div>
+                        <label for="text">First Name:</label>
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="text">Last Name:</label>
+                        <input type="text" placeholder="Last Name">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="inquiry topic">Select an inquiry topic:</label>
+                        <select name="" id="">
+                            <option value="Tickets">Tickets</option>
+                            <option value="Membership">Membership</option>
+                            <option value="Jobs">Jobs</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="text area">Message:</label> 
+                        <input type="textarea">
+                    </div>
+                    <br>
+                    <div>
+                        <input type="submit" value="SEND">
+                        <input type="reset" value="CLEAN">
+                    </div>
+
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <!--los hijos del footer son el logo con link el mapa y los links con botones-->
+        <a href="../index.html"><img src="../images/logo.gif" alt="logo" class="logo"></a>
+        <!--logo que lleva a home-->
+        <iframe class="mapa"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.233666642477!2d-0.1304876842299933!3d51.50892897963538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604ce176ac979%3A0x42af85654e23a0b4!2sGaler%C3%ADa%20Nacional!5e0!3m2!1ses!2sar!4v1650641428963!5m2!1ses!2sar"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <div class="botonera">
+        <a class=footer__button href="https://www.instagram.com/nationalgallery/" target="_blank">instagram</a>
+        <a class=footer__button href="https://es-la.facebook.com/thenationalgallery/" target="_blank">facebook</a>
+        <a class=footer__button href="https://twitter.com/nationalgallery" target="_blank">twitter</a>
+        <a class=footer__button href="https://www.youtube.com/channel/UCrPOgNsUldOtQsTf9Kjlm_A"
+            target="_blank">youtube</a>
+        </div>
+    </footer>
+
+    </div>
+
+</body>
+
+</html>
