@@ -8,6 +8,7 @@
     <title>Exhibitons</title>
     <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style_new.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
   
 </head>
 
@@ -15,73 +16,91 @@
 
 
     <div class="container_grid">
-        <!-- los hijos del contenedor grid son el header el main la section y el footer -->
         <header class="header">
-            <!--hijos del header son el nav el h1 y el boton-->
-            <nav class="nav">
-                <!--los hijos del nav son los links-->
 
-                <a class=header__nav__a href="../index.html">Home</a>
-                <a class=header__nav__a href="./about.html">About</a>
-                <a class=header__nav__a href="./exhibitions.html">Exhibitions</a>
-                <a class=header__nav__a href="./collection.html">Collections</a>
-                <a class=header__nav__a href="./contact.html">Contact</a>
-
+            <nav class="nav d-flex justify-content-center">
+                <ul class="nav d-flex justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-light " href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Exhibitions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./collection.html">Collections</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
             </nav>
 
             <h1 id="header_text">The National Gallery</h1>
 
         </header>
 
-        <main>
-            <section class="section__two">
+        <main class="main d-flex justify-content-center">
+            <div class="container-fluid">
+                <div class="card mt-4 mb-4 rounded-4 border-white col-sm-12 col-lg-4 pad  w-50 mx-auto" style="width: 18rem; background-color: rgb(218, 175, 123);">
+                    <img src="../images/thecreditsuisserafael.jpg" class="card-img-top mb-2 rounded-4" alt="...">
+                    <div class="card-body font">
+                      <h5 class="card-title">The Credit Suisse Exhibition: Raphael</h5>
+                      <p class="card-text">This exhibition, one of the first ever to explore Raphael's complete career, looks at his celebrated paintings and drawings as well as his work in architecture, poetry, and design for sculpture, tapestry and prints.</p>
+                      <a href="#" class="btn btn-dark">More Info</a>
+                    </div>
+                  </div>
 
-                <div class="exhibitions">
-                    <img class= "exhibitions img" src="../images/thecreditsuisserafael.jpg" alt="">
-                    <!--imagen de exhibicion numero 1-->
-                    <h3>The Credit Suisse Exhibition: Raphael</h3>
-                    <button>+</button> <!-- boton que expande mas obras del artista-->
-                </div>
+                  <div class="card mt-4 mb-4 rounded-4 border-white col-sm-12 col-lg-4  w-50 mx-auto"  style="width: 18rem; background-color: rgb(218, 175, 123);">
+                    <img src="../images/blueboy.jpg" class="card-img-top mb-2 rounded-4" alt="...">
+                    <div class="card-body font">
+                      <h5 class="card-title">Gainsborough's Blue Boy</h5>
+                      <p class="card-text">The Blue Boy, Thomas Gainsborough's famous oil painting, has gone on display at the National Gallery, 100 years after it was bought and shipped to the US by an American businessman.</p>
+                      <a href="#" class="btn btn-dark">More Info</a>
+                    </div>
+                  </div>
 
-                <div class="exhibitions">
-                    <img class= "exhibitions img" src="../images/turneronturner.jpg" alt="">
-                    <!--imagen de exhibicion numero 2-->
-                    <h3>Turner on Tour</h3>
-                    <button>+</button><!-- boton que expande mas obras del artista-->
-                </div>
+                  <div class="card mt-4 mb-4 rounded-4 border-white col-sm-12 col-lg-4  w-50 mx-auto" style="width: 18rem; background-color: rgb(218, 175, 123);">
+                    <img src="../images/turneronturner.jpg" class="card-img-top mb-2 rounded-4" alt="...">
+                    <div class="card-body font">
+                      <h5 class="card-title">Turner on tour</h5>
+                      <p class="card-text">Turner was famous for being an artist traveller, he toured Europe every year, voraciously filling his sketchbook with studies of continental cities, despite the often-arduous journeys it took to get there. He painted the Frick works in his London studio following trips to France and Germany in the early 1820s.</p>
+                      <a href="#" class="btn btn-dark">More Info</a>
+                    </div>
+                  </div>
 
-                <div class="exhibitions">
-                    <img class= "exhibitions img"  src="../images/blueboy.jpg" alt="">
-                    <!--imagen de exhibicion numero 3-->
-                    <h3>Gainsborough's Blue Boy</h3>
-                    <button>+</button><!-- boton que expande mas obras del artista-->
-                </div>
-
-
-            </section>
         </main>
 
         <footer class="footer">
-            <!--los hijos del footer son el logo con link el mapa y los links con botones-->
-            <a href="../index.html"><img src="../images/logo.gif" alt="logo" class="logo"></a>
-            <!--logo que lleva a home-->
-            <iframe class="mapa"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.233666642477!2d-0.1304876842299933!3d51.50892897963538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604ce176ac979%3A0x42af85654e23a0b4!2sGaler%C3%ADa%20Nacional!5e0!3m2!1ses!2sar!4v1650641428963!5m2!1ses!2sar"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-            <div class="botonera">
-                <a class=footer__button href="https://www.instagram.com/nationalgallery/" target="_blank">instagram</a>
-                <a class=footer__button href="https://es-la.facebook.com/thenationalgallery/"
-                    target="_blank">facebook</a>
-                <a class=footer__button href="https://twitter.com/nationalgallery" target="_blank">twitter</a>
-                <a class=footer__button href="https://www.youtube.com/channel/UCrPOgNsUldOtQsTf9Kjlm_A"
-                    target="_blank">youtube</a>
+            <div class="container-fluid">
+                <div class="row d-flex d-flex justify-content-center align-items-center">
+                    <div class="col-xs-12 col-lg-4 ">
+                        <a href="index.html"><img src="../images/logo.gif" alt="logo" class="logo"></a>
+                    </div>
+                    <div class="col-xs-12 col-lg-4">
+                        <iframe class="mapa mt-2 "
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.233666642477!2d-0.1304876842299933!3d51.50892897963538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604ce176ac979%3A0x42af85654e23a0b4!2sGaler%C3%ADa%20Nacional!5e0!3m2!1ses!2sar!4v1650641428963!5m2!1ses!2sar"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="col-xs-12 col-lg-4 d-flex justify-content-center align-items-center">
+                        <a class="footer__button" href="https://www.instagram.com/nationalgallery/"
+                            target="_blank">instagram</a>
+                        <a class="footer__button" href="https://es-la.facebook.com/thenationalgallery/"
+                            target="_blank">facebook</a>
+                        <a class="footer__button" href="https://twitter.com/nationalgallery" target="_blank">twitter</a>
+                    </div>
+                </div>
             </div>
+
         </footer>
 
-
     </div>
+
+    <script src="../thenationalgallery_scofano/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
