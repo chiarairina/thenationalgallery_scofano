@@ -1,9 +1,8 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
 .container_grid {
@@ -28,32 +27,44 @@
     background-size: cover;
     width: 100%;
     height: 30vh;
-    opacity:90%;
+    opacity: 90%;
 }
 
 #header_text {
     color: white;
     font-size: 3rem;
     text-align: center;
-    overflow: hidden; 
-  white-space: nowrap; 
-  margin: 0 auto; 
-  letter-spacing: .15em; 
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
 }
 
 @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
+    from {
+        width: 0
+    }
 
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: rgb(255, 255, 255); }
-  }
+    to {
+        width: 100%
+    }
+}
+
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: rgb(255, 255, 255);
+    }
+}
 
 
 /**main**/
@@ -77,11 +88,12 @@
 .exhibitions img {
     width: 55%;
     height: 65%;
-    object-fit:contain;
+    object-fit: contain;
     transition: height 1s, width 1s;
 }
-.exhibitions img:hover{
-    width:  71%;
+
+.exhibitions img:hover {
+    width: 71%;
     height: 90%;
     opacity: 90%;
 }
@@ -99,7 +111,7 @@
     align-items: center;
 }
 
-.color{
+.color {
     background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
 }
 
@@ -107,7 +119,7 @@
 
 .footer {
     grid-area: footer;
-    background-color: rgb(19, 18, 18);
+    background-color: #393c41;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -116,41 +128,51 @@
 
 .logo {
     width: 50%;
-    height: 90%;
+    height: 80%;
     object-fit: cover;
+    border-radius: 5px;
     position: relative;
-    top: 17%;
+    top: 13px;
+    right: 50px;
 }
 
 .mapa {
     width: 50%;
     height: 90%;
+    border-radius: 8px;
 }
 
+.instructions__text {
+    color: white;
+    font-size: smaller;
+    position: relative;
+    top: 8px;
+}
 
 
 .footer__button {
- padding: .75rem 1.25rem;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 1rem;
-  letter-spacing: .15rem;
-  z-index: 1;
-  text-decoration: none;
-  transition: all 500ms ease;
- 
+    padding: .75rem 1.25rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    z-index: 1;
+    text-decoration: none;
+    transition: all 500ms ease;
+
 }
 
 
-.footer__button:hover{
-    color: #ff7a59;
-    border: #ff7a59 solid 1px;
-     background:#fff;
+.footer__button:hover {
+    color: black;
+    border: black solid 1px;
+    background: rgba(0, 0, 0, 0.089);
+    border-radius: 11px;
 }
 
 
 /** estilos para collection **/
-.title{
+.title {
     font-size: x-large;
     color: black;
     text-align: center;
@@ -158,30 +180,45 @@
     top: 90%;
 }
 
-.container__collection{
+.container__collection {
     background-color: rgb(218, 175, 123);
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
-.photos__collection{
+.photos__collection {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 
-.img__1{
+
+.img__1 {
     width: 50%;
     height: 90%;
     object-fit: cover;
+    transition: all 2s;
+    opacity: 0.8;
+    filter: blur(2px);
+
+}
+
+.img__1:hover {
+    opacity: 3;
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    filter: blur(0px);
+
 }
 
 
 /** estilos para about**/
-.section__about__description{
+.section__about__description {
     grid-area: main;
     background-color: rgb(226, 152, 118);
     width: 100%;
@@ -190,11 +227,11 @@
 
 /**estilos para contact**/
 
-.color{
-    background-color: rgb(226, 152, 118);
+.color {
+    background-color: rgb(26, 20, 18);
 }
 
-@media screen and (max-width: 720px){
+@media screen and (max-width: 730px) {
 
     #header_text {
         font-size: 2rem;
@@ -203,24 +240,39 @@
     .main {
         grid-template-columns: repeat(1, 1fr);
     }
-    
+
     .text__about {
         font-weight: 200;
         font-size: smaller;
     }
 
+    .logo {
+        position: relative;
+        left: 115px;
+    }
 
+    .mapa {
+        position: relative;
+        left: 128px;
+    }
 
-  .title{
-    font-size: medium;
-  }
+    .instructions__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
-  .description{
-    font-size: smaller;
-  }
+    .title {
+        font-size: medium;
+    }
 
-  .container__collection{
-    grid-template-columns: repeat(1, 1fr);
-}
+    .description {
+        font-size: smaller;
+    }
+
+    .container__collection {
+        grid-template-columns: repeat(1, 1fr);
+    }
 
 }
