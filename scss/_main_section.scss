@@ -1,0 +1,54 @@
+/** main **/
+
+.main {
+    grid-area: main;
+    background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+
+    .exhibitions {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        width: 55%;
+        height: 65%;
+        object-fit: contain;
+        transition: height 1s, width 1s;
+
+        &:hover {
+            width: 71%;
+            height: 90%;
+            opacity: 90%;
+        }
+    }
+
+}
+
+/** section **/
+
+.section__about {
+    grid-area: section;
+    background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+
+    .title {
+        font-size: xx-large;
+        font-style: oblique;
+    }
+
+    .text {
+        font-style: inherit;
+        font-size: medium;
+    }
+}

@@ -56,7 +56,6 @@
 
 @keyframes blink-caret {
 
-    from,
     to {
         border-color: transparent
     }
@@ -110,10 +109,25 @@
     justify-items: center;
     align-items: center;
 }
+.title__about{
+    display: flex;
+    text-align: center;
+    font-size: xx-large;
+    font-style: oblique;
+}
+
+.text__about{
+    display: flex;
+    text-align: center;
+    font-style: inherit;
+    font-size: medium;
+}
 
 .color {
     background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
 }
+
+
 
 /**footer**/
 
@@ -136,17 +150,17 @@
     right: 50px;
 }
 
-.mapa {
-    width: 50%;
-    height: 90%;
-    border-radius: 8px;
-}
-
 .instructions__text {
     color: white;
     font-size: smaller;
     position: relative;
     top: 8px;
+}
+
+.mapa {
+    width: 50%;
+    height: 90%;
+    border-radius: 8px;
 }
 
 
@@ -203,7 +217,7 @@
     object-fit: cover;
     transition: all 2s;
     opacity: 0.8;
-    filter: blur(2px);
+    filter: blur(1.5px);
 
 }
 

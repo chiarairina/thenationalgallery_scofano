@@ -1,0 +1,51 @@
+/** footer **/
+.footer {
+    grid-area: footer;
+    background-color: #393c41;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+
+    .logo {
+        width: 50%;
+        height: 80%;
+        object-fit: cover;
+        border-radius: 5px;
+        position: relative;
+        top: 13px;
+        right: 50px;
+    }
+
+    .instructions__text {
+        color: white;
+        font-size: smaller;
+        position: relative;
+        top: 8px;
+    }
+
+    .mapa {
+        width: 50%;
+        height: 90%;
+        border-radius: 8px;
+    }
+
+    .footer__button {
+        padding: .75rem 1.25rem;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1rem;
+        letter-spacing: .15rem;
+        z-index: 1;
+        text-decoration: none;
+        transition: all 500ms ease;
+
+        &:hover {
+            color: black;
+            border: black solid 1px;
+            background: rgba(0, 0, 0, 0.089);
+            border-radius: 11px;
+        }
+
+    }
+}
