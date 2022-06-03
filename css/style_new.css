@@ -56,6 +56,7 @@
 
 @keyframes blink-caret {
 
+    from,
     to {
         border-color: transparent
     }
@@ -109,25 +110,10 @@
     justify-items: center;
     align-items: center;
 }
-.title__about{
-    display: flex;
-    text-align: center;
-    font-size: xx-large;
-    font-style: oblique;
-}
-
-.text__about{
-    display: flex;
-    text-align: center;
-    font-style: inherit;
-    font-size: medium;
-}
 
 .color {
     background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
 }
-
-
 
 /**footer**/
 
@@ -150,17 +136,17 @@
     right: 50px;
 }
 
+.mapa {
+    width: 50%;
+    height: 90%;
+    border-radius: 8px;
+}
+
 .instructions__text {
     color: white;
     font-size: smaller;
     position: relative;
     top: 8px;
-}
-
-.mapa {
-    width: 50%;
-    height: 90%;
-    border-radius: 8px;
 }
 
 
@@ -217,7 +203,7 @@
     object-fit: cover;
     transition: all 2s;
     opacity: 0.8;
-    filter: blur(1.5px);
+    filter: blur(2px);
 
 }
 
@@ -245,7 +231,11 @@
     background-color: rgb(26, 20, 18);
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    *{
+        overflow-x: hidden;
+    }
 
     #header_text {
         font-size: 2rem;
@@ -260,23 +250,17 @@
         font-size: smaller;
     }
 
-    .logo {
-        position: relative;
-        left: 115px;
-    }
+.logo{
+    object-fit:contain;
+}
 
-    .mapa {
-        position: relative;
-        left: 128px;
+.instructions__text{
+    font-size: small;
+}
+    .footer__button{
+        font-size: 0.8rem;
     }
-
-    .instructions__text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
+**/
     .title {
         font-size: medium;
     }
@@ -290,3 +274,52 @@
     }
 
 }
+
+ @media screen and (min-width: 300px) and (max-width: 480px) {
+
+    *{
+        overflow-x: hidden;
+    }
+
+    #header_text {
+        font-size: 1.4rem;
+    }
+
+  .nav{
+    font-size: 0.5rem;
+    
+  }
+
+  .main {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.logo{
+    object-fit:contain;
+}
+
+.instructions__text{
+    font-size: smaller;
+}
+.footer__button{
+    font-size: 0.5rem;
+    padding: .25rem 0.75rem;
+}
+
+.container__collection {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+
+
+
+
+
+
+
+
+
+}
+
+    
+
