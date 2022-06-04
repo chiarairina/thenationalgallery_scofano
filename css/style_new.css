@@ -245,6 +245,10 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .title__about{
+        font-size: small;
+        font-weight: bold;
+    }
     .text__about {
         font-weight: 200;
         font-size: smaller;
@@ -260,7 +264,7 @@
     .footer__button{
         font-size: 0.8rem;
     }
-**/
+
     .title {
         font-size: medium;
     }
@@ -272,6 +276,10 @@
     .container__collection {
         grid-template-columns: repeat(1, 1fr);
     }
+    .font{
+        font-size: small;
+    }
+  
 
 }
 
@@ -294,6 +302,15 @@
     grid-template-columns: repeat(1, 1fr);
 }
 
+.title__about{
+    font-size: small;
+    font-weight: bold;
+}
+.text__about {
+    font-weight: 200;
+    font-size: smaller;
+}
+
 .logo{
     object-fit:contain;
 }
@@ -310,11 +327,18 @@
     grid-template-columns: repeat(1, 1fr);
 }
 
+.font{
+    font-size: smaller;
+}
 
+.title{
+    font-size: small;
+    font-weight: bold;
+}
 
-
-
-
+.description{
+    font-size: small;
+}
 
 
 
