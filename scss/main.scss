@@ -3,6 +3,8 @@ $width: 100%;
 $bgimage: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
 $white: white;
 $petrol: #393c41;
+$fsize: small;
+$fssm: smaller;
 
 
 @import "_header";
@@ -117,12 +119,12 @@ $petrol: #393c41;
 
     .title {
         font-size: xx-large;
-        font-style: oblique;
+        font-style: oblique;   /** arreglar**/
     }
 
     .text {
         font-style: inherit;
-        font-size: medium;
+        font-size: medium;/** arreglar**/
     }
 }
 /** footer **/
@@ -172,7 +174,11 @@ $petrol: #393c41;
     }
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    *{
+        overflow-x: hidden;
+    }
 
     #header_text {
         font-size: 2rem;
@@ -182,26 +188,24 @@ $petrol: #393c41;
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .title__about{
+        font-size: $fsize;
+        font-weight: bold;
+    }
     .text__about {
         font-weight: 200;
-        font-size: smaller;
+        font-size: $fssm;
     }
 
-    .logo {
-        position: relative;
-        left: 115px;
-    }
+.logo{
+    object-fit:contain;
+}
 
-    .mapa {
-        position: relative;
-        left: 128px;
-    }
-
-    .instructions__text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+.instructions__text{
+    font-size: $fsize;
+}
+    .footer__button{
+        font-size: 0.8rem;
     }
 
     .title {
@@ -209,11 +213,73 @@ $petrol: #393c41;
     }
 
     .description {
-        font-size: smaller;
+        font-size: $fssm;
     }
 
     .container__collection {
         grid-template-columns: repeat(1, 1fr);
     }
+    .font{
+        font-size: $fsize;
+    }
+  
 
+}
+
+ @media screen and (min-width: 300px) and (max-width: 480px) {
+
+    *{
+        overflow-x: hidden;
+    }
+
+    #header_text {
+        font-size: 1.4rem;
+    }
+
+  .nav{
+    font-size: 0.5rem;
+    
+  }
+
+  .main {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.title__about{
+    font-size: $fsize;
+    font-weight: bold;
+}
+.text__about {
+    font-weight: 200;
+    font-size: $fssm;
+}
+
+.logo{
+    object-fit:contain;
+}
+
+.instructions__text{
+    font-size: $fssm;
+}
+.footer__button{
+    font-size: 0.5rem;
+    padding: .25rem 0.75rem;
+}
+
+.container__collection {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.font{
+    font-size: $fssm;
+}
+
+.title{
+    font-size: $fsize;
+    font-weight: bold;
+}
+
+.description{
+    font-size: $fsize;
+}
 }
