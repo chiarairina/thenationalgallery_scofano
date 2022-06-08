@@ -9,7 +9,7 @@
     opacity: 90%;
 
     #text {
-        color: white;
+        color: map-get($map-colors, w);
         font-size: 3rem;
         text-align: center;
         overflow: hidden;
@@ -40,6 +40,6 @@
     }
 
     50% {
-        border-color: rgb(255, 255, 255);
+        border-color: map-get($map-colors, w);
     }
 }

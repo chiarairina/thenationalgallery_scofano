@@ -1,4 +1,4 @@
-/**variables**/
+
 .header {
   grid-area: header;
   background-image: url(../images/main.jpg);
@@ -39,7 +39,10 @@
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
-  grid-template-areas: "header" "main" "section" "footer"; }
+  grid-template-areas: "header"
+ "main"
+ "section"
+ "footer"; }
 
 @media screen and (max-width: 730px) {
   #header_text {
@@ -156,7 +159,10 @@
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
-  grid-template-areas: "header" "main" "section" "footer"; }
+  grid-template-areas: "header"
+ "main"
+ "section"
+ "footer"; }
 
 /**header**/
 .header {
