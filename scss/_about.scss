@@ -1,0 +1,49 @@
+.section__about__description {
+    grid-area: main;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 82vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+
+    .div__card {
+        width: 50%;
+        height: 45%;
+
+    }
+
+    &:hover {
+        opacity: 0.5;
+    }
+
+    .div__text {
+        width: 95%;
+        height: 55%;
+        background-color: #393c412f;
+
+    }
+
+    .image__card {
+        width: 95%;
+        height: 60%;
+        background-size: cover;
+    }
+
+    .title__cards {
+        font-size: large;
+        font-weight: 500;
+        position: relative;
+        top: 5%;
+    }
+
+    .cards__info {
+        font-size: 12px;
+        font-weight: 400;
+        top: 5%;
+    }
+
+
+}
