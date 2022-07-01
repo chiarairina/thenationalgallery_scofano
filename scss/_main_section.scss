@@ -1,40 +1,59 @@
-/** main **/
-
 .main {
     grid-area: main;
     background-image: url(../images/main.jpg);
     background-size: cover;
-    background-position: 50% 50%;
-    width: 100%;
+    background-position: $width/2 $width/2;
+    width: $width;
     height: 82vh;
     opacity: 90%;
 
     .div__welcome {
-        background-color: white;
-        width: 17%;
-        height: 80%;
-        position: relative;
+        background-color: map-get($map-colors, w );
+        @include w-h (17%, 80%);
+        position:$position-relative;
         top: 10%;
         left: 70%;
         border-radius: 3px;
-        box-shadow: 4px 4px 4px 0 rgb(0 0 0 / 50%);
+        box-shadow: 4px 4px 4px ;
     }
 
-    .welcome {
-        font-weight: 500;
-        color: rgb(136, 8, 8);
-        padding-left: 7px;
 
+
+    .welcome {
+        font-weight: $fontweight*5;
+        color: map-get($map-colors, r );
+        padding-left: 7px;
+        animation: bounce 2s infinite;
+
+    }
+
+    @keyframes bounce {
+
+        0%,
+        25%,
+        50%,
+        75%,
+        100% {
+            transform: translateY(0);
+        }
+
+        40% {
+            transform: translateY(-30px);
+        }
+
+        60% {
+            transform: translateY(-24px);
+        }
     }
 
     .line {
         height: 1.5px;
-        background: rgb(136, 8, 8);
+        background:map-get($map-colors, r );
         width: 80%;
     }
 
     .text {
-        font-weight: 300;
+        font-weight:$fontweight*3;
         padding-left: 7px;
 
     }

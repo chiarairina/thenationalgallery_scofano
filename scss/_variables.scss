@@ -1,14 +1,20 @@
+$position-relative: relative;
 $width: 100%;
-$bgimage: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
-$white: white;
-$petrol: #393c41;
-$fsize: small;
-$fssm: smaller;
+$auto: auto;
+$fontweight: 100;
 
 $map-colors:(
     w:white,
     pe: #393c41,
-    bla: black,
+    r:rgb(136, 8, 8),
     gr: rgba(0, 0, 0, 0.089),
-)
+);
+
+$map-sizes:(
+    xs: smaller,
+    s: small,
+    m: medium,
+    l: large,
+);
+
 

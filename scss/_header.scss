@@ -1,49 +1,20 @@
 .header {
     grid-area: header;
-    background-image: url(../images/main.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 30vh;
-    opacity: 90%;
+    width: $width;
+    height: 18vh;
+    background-color: map-get($map-colors, pe );
 
-    #text {
-        color: map-get($map-colors, w);
-        font-size: 3rem;
-        text-align: center;
-        overflow: hidden;
-        white-space: nowrap;
-        margin: 0 auto;
-        letter-spacing: .15em;
-        animation:
-            typing 3.5s steps(40, end),
-            blink-caret .75s step-end infinite;
+    .n__color{
+        color: map-get($map-colors, pe );
     }
-        .font__nav{
+
+    .logo__one{
+        width: $width/2;
+        height:  $width/2;
+    }
+    .font__nav {
         font-family: 'Roboto', sans-serif;
-        font-weight: 100;
-    }
-}
-
-@keyframes typing {
-    from {
-        width: 0
+        font-weight: 200;
     }
 
-    to {
-        width: 100%
-    }
-}
-
-
-@keyframes blink-caret {
-
-    to {
-        border-color: transparent
-    }
-
-    50% {
-        border-color: map-get($map-colors, w);
-    }
 }

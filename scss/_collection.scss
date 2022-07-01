@@ -1,32 +1,40 @@
 .container__collection {
-    background-color: rgb(226, 217, 217);
-    width: 100%;
+    background-color: #e3e7ee;
+    width: $width;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
     .photos__collection {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
+        @include flexbox (column, center, center);
+        width: 60%;
+        height: 90%;
+        margin-top: 10%;
+        margin-left: 20%;
     }
 
     .img__1 {
-        width: 50%;
-        height: 90%;
+        width: 80%;
+        height: 80%;
         object-fit: cover;
-        transition: all 2s;
-        opacity: 0.8;
+        transition: 2s;
         filter: blur(2px);
 
     }
 
-    &:hover {
+    .img__1:hover {
         opacity: 3;
-        -webkit-transform: scale(0.8);
-        -ms-transform: scale(0.8);
-        transform: scale(0.8);
         filter: blur(0px);
+
+    }
+
+    .description {
+        font-family: 'Roboto', sans-serif;
+        font-size: map-get($map-sizes, xs);
+        font-weight: 400;
+        text-decoration: underline;
+    }
+
+    .link{
+        color: black;
     }
 }

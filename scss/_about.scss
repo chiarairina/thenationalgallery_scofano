@@ -1,47 +1,42 @@
 .section__about__description {
     grid-area: main;
-    background-color: whitesmoke;
-    width: 100%;
+    background-color: #e3e7ee;
+    width: $width;
     height: 82vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  @include flexbox (row, center, center);
     padding-left: 15px;
 
     .div__card {
-        width: 50%;
+        width: $width/2;
         height: 45%;
-
+        
     }
 
-    &:hover {
+    .div__card:hover {
         opacity: 0.5;
     }
 
     .div__text {
-        width: 95%;
-        height: 55%;
-        background-color: #393c412f;
+        @include w-h (95%, 55%);
+        background-color: map-get($map-colors, gr );
 
     }
 
     .image__card {
-        width: 95%;
-        height: 60%;
+        @include w-h (95%, 60%);
         background-size: cover;
     }
 
     .title__cards {
-        font-size: large;
-        font-weight: 500;
-        position: relative;
+        font-size:map-get($map-sizes,l);
+        font-weight: $fontweight*5;
+        position: $position-relative;
         top: 5%;
     }
 
     .cards__info {
         font-size: 12px;
-        font-weight: 400;
+        font-weight: $fontweight*4;
         top: 5%;
     }
 

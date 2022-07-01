@@ -1,51 +1,57 @@
-/** footer **/
+
 .footer {
     grid-area: footer;
-    background-color: map-get($map-colors, pe);
-    width: 100%;
-    @include flexbox (center,center);
+    background-color: map-get($map-colors, pe );
+    width: $width;
+    display: flex;
+    justify-content: center;
     align-content: space-between;
 
     .logo {
-        width: 50%;
+        width: $width/2;
         height: 80%;
         object-fit: cover;
         border-radius: 5px;
-        position: relative;
+        position: $position-relative;
         top: 13px;
         right: 50px;
     }
 
     .instructions__text {
-        color: map-get($map-colors, w);
-        font-size: smaller;
-        position: relative;
+        color: map-get($map-colors, w );
+        font-size: map-get($map-sizes,xs);
+        position: $position-relative;
         top: 8px;
     }
 
     .mapa {
-        width: 50%;
-        height: 90%;
+        width: $width;
+        height: 50%;
         border-radius: 8px;
     }
 
-    .footer__button {
-        padding: .75rem 1.25rem;
-        color: map-get($map-colors, w);
-        text-transform: uppercase;
-        font-size: 1rem;
-        letter-spacing: .15rem;
-        z-index: 1;
-        text-decoration: none;
-        transition: all 500ms ease;
+    .image {
+        @include w-h (30px, 30px);
+        animation: bounce 2s infinite;
+    }
 
-        &:hover {
-            @extend.footer__button;
-            color: map-get($map-colors, bla);
-            border: black solid 1px;
-            background: map-get($map-colors, gr);
-            border-radius: 11px;
+    @keyframes bounce {
+
+        0%,
+        25%,
+        50%,
+        75%,
+        100% {
+            transform: translateY(0);
         }
 
+        40% {
+            transform: translateY(-30px);
+        }
+
+        60% {
+            transform: translateY(-24px);
+        }
     }
+
 }

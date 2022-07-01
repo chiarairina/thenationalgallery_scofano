@@ -10,9 +10,8 @@
     <title>The National Gallery</title>
     <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="./css/style_new.css">
     <link rel="stylesheet" href="../thenationalgallery_scofano/css/bootstrap.min.css">
-    
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
@@ -21,36 +20,35 @@
 
         <header class="header">
 
-            <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg n__color ">
+                <div class="container-fluid d-flex justify-content-evenly  font__nav">
+                    <a href="./index.html"><img src="./images/logo.gif" alt="the national gallery logo" class="logo__one d-md-none d-lg-block d-sm-none d-md-block d-none d-sm-block"></a>
+                    <ul class="navbar-nav font__nav ">
+                      <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-light" href="./pages/about.html">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-light" href="./pages/exhibitions.html">Exhibitions</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-light" href="./pages/collection.html">Collections</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-light" href="./pages/contact.html">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
 
-            <nav class="nav d-flex justify-content-center ">
+              </nav>
+    
 
-                <ul class="nav d-flex justify-content-center">
-                    <li class="nav-item col">
-                        <a class="nav-link text-light font__nav" href="#">Home</a>
-                    </li>
-                    <li class="nav-item col">
-                        <a class="nav-link text-light font__nav" href="./pages/about.html">About</a>
-                    </li>
-                    <li class="nav-item col">
-                        <a class="nav-link text-light font__nav" href="./pages/exhibitions.html">Exhibitions</a>
-                    </li>
-                    <li class="nav-item col">
-                        <a class="nav-link text-light font__nav" href="./pages/collection.html">Collections</a>
-                    </li>
-                    <li class="nav-item col">
-                        <a class="nav-link text-light font__nav" href="./pages/contact.html">Contact</a>
-                    </li>
-                </ul>
-
-            </nav>
-
-            <h2 id="header_text">The National Gallery.</h2>
-
-        </div>
 
         </header>
-        <!--final de header de bootstrap-->
+
 
         <main>
 
@@ -62,11 +60,12 @@
                     <p class="text">Your space for art</p>
                     <p class="text">Open daily 10am to 6pm
                         Friday until 9pm
-                        
+
                         Closed 24 to 26 December and 1 January</p>
                     <p class="text">Admission free</p>
                     <p class="text">Charing Cross, Leicester Square</p>
-                    <a class="btn btn-primary btn-primary-blue btn-next" href="../thenationalgallery_scofano/pages/about.html">More Info</a>
+                    <a class="btn btn-primary btn-primary-blue btn-next"
+                        href="../thenationalgallery_scofano/pages/about.html">More Info</a>
                 </div>
 
             </section>
@@ -81,7 +80,7 @@
             <div class="container-fluid">
                 <div class="row d-flex justify-content-center align-items-center container-fluid">
                     <div class=" col-12 col-lg-4 ">
-                        <a href="index.html"><img src="./images/logo.gif" alt="the national gallery logo" class="logo"></a>
+                        <a href="./index.html"><img src="./images/logo.gif" alt="the national gallery logo" class="logo"></a>
                         <p class="instructions__text">Trafalgar Square
                             <br>
                             London
@@ -100,12 +99,25 @@
                     </div>
 
                     <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center">
-                        <a class="footer__button" href="https://www.instagram.com/nationalgallery/"
-                            target="_blank">instagram</a>
-                        <a class="footer__button" href="https://es-la.facebook.com/thenationalgallery/"
-                            target="_blank">facebook</a>
-                        <a class="footer__button" href="https://twitter.com/nationalgallery" target="_blank">twitter</a>
+                        <div class="icons">
+                            <a href="https://www.facebook.com/thenationalgallery" target="_blank"><img class="image"
+                                    src="https://www.nationalgallery.org.uk/v2/img/logos/facebook-circle.svg"
+                                    alt="Facebook"></a>
+                            <a href="https://twitter.com/nationalgallery" target="_blank"><img class="image"
+                                    src="https://www.nationalgallery.org.uk/v2/img/logos/twitter-circle.svg"
+                                    alt="Twitter"></a>
+                            <a href="https://www.instagram.com/nationalgallery/" target="_blank"><img class="image"
+                                    src="https://www.nationalgallery.org.uk/v2/img/logos/instagram-circle.svg"
+                                    alt="Instagram"></a>
+                            <a href="https://www.tiktok.com/@nationalgallerylondon" target="_blank"><img class="image"
+                                    src="https://www.nationalgallery.org.uk/v2/img/logos/tiktok-circle.svg"
+                                    alt="TikTok"></a>
+                            <a href="https://www.youtube.com/user/nationalgalleryuk" target="_blank"><img class="image"
+                                    src="https://www.nationalgallery.org.uk/v2/img/logos/youtube-circle.svg"
+                                    alt="YouTube"></a>
+                        </div>
                     </div>
+
 
                 </div>
 
@@ -118,7 +130,8 @@
 
 
 
-    <script src="../thenationalgallery_scofano/js/bootstrap.bundle.min.js"></script>
+
 </body>
+<script src="./js/bootstrap.bundle.min.js"></script>
 
 </html>

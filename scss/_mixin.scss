@@ -3,4 +3,9 @@
     flex-direction: $value-flex-direction;
     justify-content: $value-justify-content;
     align-items: $value-align-items;
+};
+
+@mixin w-h ($value-width, $value-height){
+    width: $value-width;
+    height: $value-height;
 }

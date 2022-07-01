@@ -11,9 +11,7 @@
     <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/style_new.css">
-
-
+    <link rel="stylesheet" href="../css/main.css">
 
 </head>
 
@@ -23,29 +21,32 @@
 
         <header class="header">
 
-            <nav class="nav d-flex justify-content-center">
-
-                <ul class="nav d-flex justify-content-center">
-                    <li class="nav-item col">
-                        <a class="nav-link text-light " href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item col">
-                        <a class="nav-link text-light" href="./about.html">About</a>
-                    </li>
-                    <li class="nav-item col">
+            <nav class="navbar navbar-expand-lg n__color  flex-sm-column ">
+                <div class="container-fluid d-flex justify-content-evenly">
+                    <a href="../index.html"><img src="../images/logo.gif" alt="the national gallery logo" class="logo__one d-md-none d-lg-block d-sm-none d-md-block d-none d-sm-block"></a>
+                    <ul class="navbar-nav font__nav ">
+                      <li class="nav-item">
+                        <a class="nav-link text-light" href="../index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-light" href="#">About</a>
+                      </li>
+                      <li class="nav-item">
                         <a class="nav-link text-light" href="./exhibitions.html">Exhibitions</a>
-                    </li>
-                    <li class="nav-item col">
+                      </li>
+                      <li class="nav-item">
                         <a class="nav-link text-light" href="./collection.html">Collections</a>
-                    </li>
-                    <li class="nav-item col">
+                      </li>
+                      <li class="nav-item">
                         <a class="nav-link text-light" href="./contact.html">Contact</a>
-                    </li>
-                </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
 
-            </nav>
+              </nav>
+    
 
-            <h2 id="header_text">The National Gallery.</h2>
 
         </header>
         <!--final de header de bootstrap-->
@@ -53,10 +54,8 @@
 
         <main>
             <section class="section__about__description">
-
-
                 <div class="div__card">
-                    <img class="image__card" src="../images/history.jpg" alt="history of the collection">
+                    <a href="https://en.wikipedia.org/wiki/John_Julius_Angerstein" target="_blank"><img class="image__card" src="../images/history.jpg" alt="history of the collection"></a>
                     <div class="div__text">
                         <h3 class="title__cards">History of the collection</h3>
                         <p class="cards__info">The first paintings in the National Gallery collection came from the financier and collector
@@ -65,7 +64,7 @@
                 </div>
 
                 <div class="div__card">
-                    <img class="image__card" src="../images/turnerbequest.jpg" alt="The Turner Bequest">
+                    <a href="https://en.wikipedia.org/wiki/John_Julius_Angerstein" target="_blank"><img class="image__card" src="../images/turnerbequest.jpg" alt="The Turner Bequest"></a>
                     <div class="div__text">
                         <h3 class="title__cards">The Turner Bequest</h3>
                         <p class="cards__info">J.M.W Turner's Bequest was the largest ever donation of works of art to the National Gallery.
@@ -74,16 +73,16 @@
                 </div>
 
                 <div class="div__card">
-                    <img class="image__card" src="../images/collectors.jpg" alt="Colectos and Benefactors">
+                    <a href="https://en.wikipedia.org/wiki/John_Julius_Angerstein" target="_blank"><img class="image__card" src="../images/collectors.jpg" alt="Colectos and Benefactors"></a>
                     <div class="div__text">
-                        <h3 class="title__cards">Colectos and Benefactors</h3>
+                        <h3 class="title__cards">Colectors and Benefactors</h3>
                         <p class="cards__info">Art Fund is an independent charity that secures works of art for the UKs public collections.
                             It has a long history of supporting acquisitions at the National Gallery.</p>
                     </div>
                 </div>
 
                 <div class="div__card">
-                    <img class="image__card" src="../images/director.jpg" alt="Director">
+                    <a href="https://en.wikipedia.org/wiki/John_Julius_Angerstein" target="_blank"><img class="image__card" src="../images/director.jpg" alt="Director"></a>
                     <div class="div__text">
                         <h3 class="title__cards">Director</h3>
                         <p class="cards__info">Gabriele Finaldi has been Director of the National Gallery since August 2015</p>
@@ -91,9 +90,9 @@
                 </div>
 
                 <div class="div__card">
-                    <img class="image__card" src="../images/bridgewater.jpg" alt="The Bridgewater syndicate">
+                    <a href="https://en.wikipedia.org/wiki/John_Julius_Angerstein" target="_blank"><img class="image__card" src="../images/bridgewater.jpg" alt="The Bridgewater syndicate"></a> 
                     <div class="div__text">
-                        <h3 class="title__cards">The Bridgewater syndicate</h3>
+                        <h3 class="title__cards">Bridgewater syndicate</h3>
                         <p class="cards__info">Discover how the first British owners of Diana and Actaeon revolutionised tastes in art and
                             started the first public displays.</p>
                     </div>
@@ -110,7 +109,7 @@
             <div class="container-fluid">
                 <div class="row d-flex d-flex justify-content-center align-items-center container-fluid ">
                     <div class="col-12 col-lg-4 ">
-                        <a href="index.html"><img src="../images/logo.gif" alt="the national gallery logo"
+                        <a href="../index.html"><img src="../images/logo.gif" alt="the national gallery logo"
                                 class="logo"></a>
                         <p class="instructions__text">Trafalgar Square
                             <br>
@@ -130,13 +129,24 @@
                     </div>
 
                     <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center">
-                        <a class="footer__button" href="https://www.instagram.com/nationalgallery/"
-                            target="_blank">instagram</a>
-                        <a class="footer__button" href="https://es-la.facebook.com/thenationalgallery/"
-                            target="_blank">facebook</a>
-                        <a class="footer__button" href="https://twitter.com/nationalgallery" target="_blank">twitter</a>
+                        <div class="icons">
+                            <a href="https://www.facebook.com/thenationalgallery" target="_blank"><img class="image"
+                                    src="https://www.nationalgallery.org.uk/v2/img/logos/facebook-circle.svg"
+                                    alt="Facebook"></a>
+                            <a href="https://twitter.com/nationalgallery" target="_blank"><img class="image"
+                                    src="https://www.nationalgallery.org.uk/v2/img/logos/twitter-circle.svg"
+                                    alt="Twitter"></a>
+                            <a href="https://www.instagram.com/nationalgallery/" target="_blank"><img class="image"
+                                    src="https://www.nationalgallery.org.uk/v2/img/logos/instagram-circle.svg"
+                                    alt="Instagram"></a>
+                            <a href="https://www.tiktok.com/@nationalgallerylondon" target="_blank"><img class="image"
+                                    src="https://www.nationalgallery.org.uk/v2/img/logos/tiktok-circle.svg"
+                                    alt="TikTok"></a>
+                            <a href="https://www.youtube.com/user/nationalgalleryuk" target="_blank"><img class="image"
+                                    src="https://www.nationalgallery.org.uk/v2/img/logos/youtube-circle.svg"
+                                    alt="YouTube"></a>
+                        </div>
                     </div>
-
                 </div>
 
             </div>
@@ -145,7 +155,7 @@
         <!--final de footer de bootstrap-->
 
     </div>
-    <script src="../thenationalgallery_scofano/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -1,111 +1,125 @@
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 690px) and (max-width: 990px) {
+    .font__nav {
+        font-size: 20px;
+        @include flexbox (row, center, center);
+        gap: 30px;
+        margin-right: 60px;
 
-    *{
-        overflow-x: hidden;
     }
 
-    #header_text {
-        font-size: 2rem;
+    .text {
+        font-size:map-get($map-sizes, s );
+
     }
 
-    .title__about{
-        font-size: small;
-        font-weight: bold;
-    }
-    .text__about {
-        font-weight: 200;
-        font-size: smaller;
-    }
 
-.logo{
-    object-fit:contain;
-}
-
-.instructions__text{
-    font-size: small;
-}
-    .footer__button{
-        font-size: 0.8rem;
-    }
-
-    .title {
-        font-size: medium;
-    }
-
-    .description {
-        font-size: smaller;
+    .cards__info {
+        display: none;
     }
 
     .container__collection {
         grid-template-columns: repeat(1, 1fr);
     }
-    .font{
-        font-size: small;
-    }
-  
 
 }
 
- @media screen and (min-width: 300px) and (max-width: 480px) {
+@media screen and (min-width: 490px) and (max-width: 690px) {
+    .font__nav {
+        font-size: 15px;
+        @include flexbox (row, center, center);
+        gap: 25px;
+        margin-right: 30px;
 
-    *{
-        overflow-x: hidden;
-    }
-
-    #header_text {
-        font-size: 1.4rem;
     }
 
-  .nav{
-    font-size: 0.5rem;
-    
-  }
+    .div__welcome {
+        visibility: hidden;
+    }
 
-  .main {
-    grid-template-columns: repeat(1, 1fr);
+    .section__about__description {
+        height: 45%;
+        @include flexbox (column, center, center);
+
+    }
+
+    .div__text {
+        width: 50%;
+        height: 15%;
+        font-size: 8px;
+    }
+
+    .image__card {
+        width: 50%;
+        height: 15%;
+    }
+
+    .cards__info {
+        font-size: 8px;
+    }
+
+    .container__collection {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
-.title__about{
-    font-size: small;
-    font-weight: bold;
+@media screen and (min-width: 300px) and (max-width: 491px) {
+
+    .font__nav {
+        font-size: 12px;
+        @include flexbox (row, center, center);
+        gap: 10px;
+        margin-right: 7px;
+
+    }
+
+    .div__welcome {
+        display: none;
+    }
+
+    .font__contact {
+        font-size: map-get($map-sizes, xs );
+    }
+
+    .logo {
+        position: $position-relative;
+        left: -11%;
+    }
+
+    .container__collection {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .section__about__description {
+        height: 105vh;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        @include flexbox (column, center, center);
+        gap: 30px;
+
+    }
+
+    .div__card {
+        width: 60%;
+        height: 10%;
+        font-size: map-get($map-sizes, xs );
+    }
+
+    .div__text {
+        width: 60%;
+        height: 5%;
+
+    }
+
+    .image__card {
+        width: 60%;
+        height: 10%;
+    }
+
+    .title__cards {
+        font-size: xx-small;
+    }
+
+    .cards__info {
+        display: none;
+    }
 }
-.text__about {
-    font-weight: 200;
-    font-size: smaller;
-}
-
-.logo{
-    object-fit:contain;
-}
-
-.instructions__text{
-    font-size: smaller;
-}
-.footer__button{
-    font-size: 0.5rem;
-    padding: .25rem 0.75rem;
-}
-
-.container__collection {
-    grid-template-columns: repeat(1, 1fr);
-}
-
-.font{
-    font-size: smaller;
-}
-
-.title{
-    font-size: small;
-    font-weight: bold;
-}
-
-.description{
-    font-size: small;
-}
-
-
-
-
-}
-
-
